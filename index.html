@@ -379,11 +379,17 @@ body.dark .eyebrow{color:#f0b1d0}
   to{transform:rotate(360deg)}
 }
 
-.crown{
+.github-avatar{
   position:relative;
   z-index:2;
-  font-size:110px;
-  filter:drop-shadow(0 15px 18px rgba(164,112,151,.2));
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  object-fit:cover;
+  border:6px solid rgba(255,255,255,.78);
+  box-shadow:
+    0 18px 35px rgba(164,112,151,.22),
+    0 0 0 10px rgba(255,255,255,.18);
   animation:crownFloat 3.5s ease-in-out infinite;
 }
 
@@ -705,7 +711,7 @@ footer strong{color:var(--pink)}
   .hero-visual{order:-1}
 
   .orb{width:270px}
-  .crown{font-size:82px}
+  .github-avatar{width:125px;height:125px}
 
   .interests{grid-template-columns:1fr 1fr}
 }
@@ -832,7 +838,12 @@ footer strong{color:var(--pink)}
 
     <div class="hero-visual">
       <div class="orb">
-        <div class="crown">👑</div>
+        <img
+          id="githubAvatar"
+          class="github-avatar"
+          src="https://github.com/Kornchanok21.png?size=512"
+          alt="รูปโปรไฟล์ Kornchanok Weer จาก GitHub"
+        >
         <div class="orb-caption">KORNCHANOK21 · DIGITAL CASTLE</div>
       </div>
     </div>
@@ -854,7 +865,7 @@ footer strong{color:var(--pink)}
 
       <p>
         สวัสดีค่ะ เราชื่อ <strong>Kornchanok Weer</strong>
-        เป็นนักศึกษาวิศวกรรมคอมพิวเตอร์ ปี 1
+        เป็นนักศึกษาวิศวกรรมคอมพิวเตอร์ ปี 2
         ที่กำลังค่อย ๆ เติบโตไปพร้อมกับโลกของเทคโนโลยี
         เราสนใจทั้งการเขียนโปรแกรม เว็บไซต์ ระบบเครือข่าย
         และ Internet of Things

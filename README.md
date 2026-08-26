@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Kornchanok
 
-### 💻 Computer Engineering Student | Year 1
+### 💻 Computer Engineering Student | Year 2
 
 > **Learning today. Building tomorrow. 🚀**
 

@@ -4,49 +4,119 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Kornchanok21 | Computer Engineering Student</title>
+<title>Kornchanok Weer</title>
 
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌷</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👑</text></svg>">
+
+<!-- ==========================================================================
+     PROFILE ของ Kornchanok Weer
+     ========================================================================== -->
+<script>
+const ME = {
+
+  // GitHub username
+  github: "Kornchanok21",
+
+  // ชื่อที่แสดงบนเว็บไซต์
+  name: "Kornchanok Weer",
+
+  // สถานะการศึกษา
+  role: "นักศึกษาวิศวกรรมคอมพิวเตอร์ ปี 1 · มทร.อีสาน",
+
+  // สิ่งที่สนใจสร้าง
+  tagline: "อยากเปลี่ยนไอเดียเล็ก ๆ ให้กลายเป็นเทคโนโลยีที่ใช้งานได้จริง",
+
+  // แนะนำตัว
+  about: "สวัสดีค่ะ ฉัน Kornchanok Weer นักศึกษาวิศวกรรมคอมพิวเตอร์ที่กำลังเรียนรู้และค้นหาตัวเองในโลกของเทคโนโลยี สนใจการเขียนโปรแกรม เว็บไซต์ ระบบเครือข่าย และ IoT และอยากพัฒนาทักษะของตัวเองให้สามารถสร้างผลงานที่ทั้งใช้งานได้จริงและมีความเป็นตัวเอง",
+
+  // สิ่งที่กำลังเรียนรู้
+  learning: [
+    "การเขียนโปรแกรมภาษา C และพื้นฐานการคิดเชิงอัลกอริทึม",
+    "HTML, CSS และ JavaScript สำหรับการสร้างเว็บไซต์",
+    "ระบบเครือข่ายและพื้นฐาน Network สำหรับงาน IoT",
+    "Arduino, Sensors และการสร้างอุปกรณ์ IoT",
+    "Git และ GitHub สำหรับจัดเก็บและพัฒนาผลงาน"
+  ],
+
+  // ผลงาน
+  works: [],
+
+  // ช่องทางติดต่อ
+  links: [
+    {
+      label: "GitHub",
+      url: "https://github.com/Kornchanok21"
+    }
+  ],
+
+  // ธีมเว็บไซต์
+  theme: "princess"
+
+};
+</script>
 
 <style>
-/* =========================================================
-   🌷 KORNCHANOK21 - PASTEL PROFILE WEBSITE
-   ========================================================= */
+
+/* ==========================================================================
+   PRINCESS LUXURY THEME
+   น่ารัก + หรู + คลู
+   ========================================================================== */
 
 :root {
-  --bg: #fff8fc;
-  --surface: rgba(255,255,255,.78);
-  --surface-hover: #ffffff;
+  --bg:#fff8fc;
+  --line:#ead7e5;
+  --text:#3d3040;
+  --muted:#806f80;
 
-  --pink: #f5a9c8;
-  --pink-dark: #df7fa8;
-  --purple: #b9a7e8;
-  --blue: #a8d8f0;
-  --yellow: #f8df9b;
-  --green: #a9dfc5;
+  --surface:rgba(255,255,255,.72);
 
-  --text: #51465c;
-  --muted: #8d8196;
-  --line: #f0dce8;
+  --accent:#d889b5;
+  --accent-soft:#b76d9c;
 
-  --shadow: 0 10px 30px rgba(180, 130, 170, .13);
+  --glow1:#f8dced;
+  --glow2:#e8ddfa;
+
+  --gold:#c8a15a;
+
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
 }
+
+
+/* ---------- ธีมเจ้าหญิง ---------- */
+
+[data-theme="princess"] {
+  --bg:#fff8fc;
+  --line:#ead7e5;
+  --text:#3d3040;
+  --muted:#806f80;
+
+  --surface:rgba(255,255,255,.72);
+
+  --accent:#d889b5;
+  --accent-soft:#b76d9c;
+
+  --glow1:#f8dced;
+  --glow2:#e8ddfa;
+
+  --gold:#c8a15a;
+}
+
 
 /* ---------- พื้นฐาน ---------- */
 
 * {
-  box-sizing: border-box;
+  box-sizing:border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 
 body {
-  margin: 0;
-  min-height: 100vh;
+  margin:0;
+  min-height:100vh;
 
-  color: var(--text);
+  color:var(--text);
 
   font-family:
     "Segoe UI",
@@ -54,560 +124,575 @@ body {
     system-ui,
     sans-serif;
 
-  line-height: 1.75;
+  line-height:1.75;
 
   background:
-    radial-gradient(circle at 5% 5%, #ffe5f0 0, transparent 25%),
-    radial-gradient(circle at 95% 10%, #e6dcff 0, transparent 25%),
-    radial-gradient(circle at 80% 90%, #dff6ff 0, transparent 25%),
+    radial-gradient(
+      900px 450px at 5% -10%,
+      var(--glow1) 0,
+      transparent 65%
+    ),
+
+    radial-gradient(
+      850px 430px at 95% 0,
+      var(--glow2) 0,
+      transparent 60%
+    ),
+
     var(--bg);
 }
 
-/* จุดตกแต่งพื้นหลัง */
+
+/* ---------- ตกแต่งดาว ---------- */
 
 body::before {
-  content: "✦";
-  position: fixed;
-  top: 10%;
-  left: 7%;
-  color: #f3b6cf;
-  font-size: 24px;
-  opacity: .7;
-  pointer-events: none;
+  content:"✦";
+  position:fixed;
+  top:90px;
+  right:8%;
+  color:var(--gold);
+  font-size:24px;
+  opacity:.55;
+  pointer-events:none;
 }
 
 body::after {
-  content: "♡";
-  position: fixed;
-  right: 7%;
-  bottom: 10%;
-  color: #bba9e8;
-  font-size: 30px;
-  opacity: .7;
-  pointer-events: none;
+  content:"✧";
+  position:fixed;
+  top:45%;
+  left:6%;
+  color:var(--accent);
+  font-size:28px;
+  opacity:.35;
+  pointer-events:none;
 }
 
-/* ---------- Container ---------- */
+
+/* ---------- ความกว้างเว็บไซต์ ---------- */
 
 .wrap {
-  max-width: 820px;
-  margin: 0 auto;
-  padding: 30px 22px 70px;
+  max-width:760px;
+  margin:0 auto;
+  padding:0 22px 80px;
 }
 
-/* ---------- Header ---------- */
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
 
 .hero {
-  position: relative;
+  display:flex;
+  gap:22px;
+  align-items:center;
 
-  display: flex;
-  gap: 25px;
-  align-items: center;
+  padding:64px 0 8px;
 
-  padding: 55px 0 20px;
-
-  flex-wrap: wrap;
+  flex-wrap:wrap;
 }
 
-/* รูปโปรไฟล์ */
+
+/* ---------- รูปโปรไฟล์ ---------- */
 
 .avatar {
-  width: 120px;
-  height: 120px;
+  width:96px;
+  height:96px;
 
-  border-radius: 50%;
+  border-radius:50%;
 
-  border: 5px solid white;
-  outline: 3px solid #f4bfd5;
+  border:3px solid #fff;
 
-  object-fit: cover;
+  outline:2px solid var(--accent);
 
-  background: #ffeaf3;
+  object-fit:cover;
+
+  flex-shrink:0;
+
+  background:var(--surface);
 
   box-shadow:
-    0 8px 25px rgba(190, 130, 165, .2);
-
-  flex-shrink: 0;
+    0 6px 25px rgba(190,110,160,.18),
+    0 0 0 5px rgba(216,137,181,.08);
 }
 
-/* ถ้ารูป GitHub โหลดไม่ได้ */
+
+/* ถ้าโหลดรูป GitHub ไม่ได้ */
 
 .avatar-fallback {
-  width: 120px;
-  height: 120px;
+  width:96px;
+  height:96px;
 
-  border-radius: 50%;
+  border-radius:50%;
 
-  border: 5px solid white;
-  outline: 3px solid #f4bfd5;
+  border:3px solid #fff;
+  outline:2px solid var(--accent);
 
   background:
-    linear-gradient(135deg, #ffd7e8, #ddd2fa);
+    linear-gradient(
+      135deg,
+      #f7d9ea,
+      #e7dcfa
+    );
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 
-  font-size: 42px;
-  font-weight: 700;
+  font-size:38px;
+  font-weight:600;
 
-  color: #8c7191;
+  color:var(--accent);
 
   box-shadow:
-    0 8px 25px rgba(190, 130, 165, .2);
+    0 6px 25px rgba(190,110,160,.18);
 }
+
 
 .hero-text {
-  flex: 1;
-  min-width: 240px;
+  flex:1;
+  min-width:240px;
 }
 
-/* ตำแหน่ง */
+
+/* ---------- ตำแหน่ง ---------- */
 
 .role {
-  display: inline-block;
+  font:
+    600 12px/1 var(--mono);
 
-  font-size: 12px;
-  font-weight: 700;
+  letter-spacing:.14em;
 
-  letter-spacing: .08em;
+  text-transform:uppercase;
 
-  color: #b36d91;
+  color:var(--accent);
 
-  background: #ffe7f1;
-
-  border: 1px solid #f5cadb;
-
-  border-radius: 999px;
-
-  padding: 6px 13px;
-
-  margin: 0 0 12px;
+  margin:0 0 10px;
 }
 
-/* ชื่อ */
+
+/* ---------- ชื่อ ---------- */
 
 h1 {
-  font-size: clamp(34px, 7vw, 52px);
+  font-size:clamp(30px,6vw,46px);
 
-  line-height: 1.1;
+  line-height:1.15;
 
-  margin: 0 0 10px;
+  margin:0 0 8px;
 
-  letter-spacing: -.03em;
+  letter-spacing:-.02em;
 
   background:
     linear-gradient(
       90deg,
-      #d77fa7,
-      #9c86d5,
-      #73afd0
+      #b76d9c,
+      #d889b5,
+      #b69bd4
     );
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip:text;
+  background-clip:text;
+
+  color:transparent;
 }
 
-/* คำโปรย */
+
+/* ---------- คำโปรย ---------- */
 
 .tagline {
-  font-size: clamp(16px, 2.5vw, 19px);
+  font-size:clamp(17px,2.6vw,20px);
 
-  color: var(--text);
+  color:var(--text);
 
-  margin: 0;
+  margin:0;
 
-  max-width: 600px;
+  opacity:.92;
 }
+
 
 /* ---------- About ---------- */
 
 .about {
-  color: var(--muted);
+  color:var(--muted);
 
-  margin: 25px 0 0;
+  margin:26px 0 0;
 
-  max-width: 68ch;
-
-  background: rgba(255,255,255,.5);
-
-  padding: 18px 20px;
-
-  border-radius: 18px;
-
-  border: 1px solid rgba(240,220,232,.8);
+  max-width:62ch;
 }
 
-/* ---------- Links ---------- */
+
+/* ==========================================================================
+   LINKS
+   ========================================================================== */
 
 .links {
-  display: flex;
+  display:flex;
 
-  flex-wrap: wrap;
+  flex-wrap:wrap;
 
-  gap: 10px;
+  gap:10px;
 
-  padding: 0;
+  padding:0;
 
-  margin: 24px 0 0;
+  margin:24px 0 0;
 
-  list-style: none;
+  list-style:none;
 }
+
 
 .links a {
-  display: inline-block;
+  display:inline-block;
 
-  border: 1px solid #efcddd;
+  border:1px solid var(--line);
 
-  border-radius: 999px;
+  border-radius:999px;
 
-  padding: 9px 19px;
+  padding:9px 20px;
 
-  color: #805f78;
+  color:var(--text);
 
-  background: rgba(255,255,255,.65);
+  text-decoration:none;
 
-  text-decoration: none;
+  font-size:15px;
 
-  font-size: 14px;
+  background:
+    rgba(255,255,255,.5);
 
-  box-shadow: 0 4px 12px rgba(190,130,165,.08);
+  box-shadow:
+    0 4px 12px rgba(150,100,140,.06);
 
   transition:
+    border-color .2s ease,
+    color .2s ease,
     transform .2s ease,
-    box-shadow .2s ease,
-    background .2s ease;
+    box-shadow .2s ease;
 }
+
 
 .links a:hover,
 .links a:focus-visible {
-  transform: translateY(-3px);
 
-  background: white;
+  border-color:var(--accent);
+
+  color:var(--accent);
+
+  transform:translateY(-2px);
 
   box-shadow:
-    0 8px 18px rgba(190,130,165,.18);
-
-  color: #c66f99;
+    0 7px 18px rgba(190,110,160,.15);
 }
 
-/* ---------- Sections ---------- */
+
+/* ==========================================================================
+   SECTION
+   ========================================================================== */
 
 section {
-  margin-top: 55px;
+  margin-top:52px;
 }
+
 
 h2 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  font:
+    600 12px/1 var(--mono);
 
-  font-size: 17px;
+  letter-spacing:.16em;
 
-  color: #7d6a82;
+  text-transform:uppercase;
 
-  margin: 0 0 20px;
+  color:var(--muted);
 
-  padding-bottom: 10px;
+  border-bottom:1px solid var(--line);
 
-  border-bottom: 2px dashed #efd8e5;
+  padding-bottom:10px;
+
+  margin:0 0 20px;
 }
 
-h2::before {
-  content: "🌷";
-  font-size: 18px;
-}
 
-/* ---------- Learning ---------- */
+/* ==========================================================================
+   LEARNING
+   ========================================================================== */
 
 .learning {
-  list-style: none;
+  list-style:none;
 
-  padding: 0;
+  padding:0;
 
-  margin: 0;
+  margin:0;
 }
+
 
 .learning li {
-  position: relative;
+  border-left:2px solid var(--accent);
 
-  background: rgba(255,255,255,.7);
+  padding:5px 0 5px 16px;
 
-  border: 1px solid var(--line);
+  margin-bottom:14px;
 
-  border-radius: 15px;
+  color:var(--muted);
 
-  padding: 12px 16px 12px 43px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(216,137,181,.06),
+      transparent
+    );
 
-  margin-bottom: 12px;
-
-  color: var(--muted);
-
-  box-shadow: var(--shadow);
-
-  transition:
-    transform .2s ease,
-    box-shadow .2s ease;
+  border-radius:0 8px 8px 0;
 }
 
-.learning li::before {
-  content: "♡";
 
-  position: absolute;
-
-  left: 17px;
-  top: 10px;
-
-  color: #e79abb;
-
-  font-size: 20px;
-}
-
-.learning li:hover {
-  transform: translateX(5px);
-
-  box-shadow:
-    0 12px 25px rgba(180,130,170,.18);
-}
-
-/* ---------- Works ---------- */
+/* ==========================================================================
+   WORKS
+   ========================================================================== */
 
 .works {
-  display: grid;
+  display:grid;
 
-  gap: 15px;
+  gap:14px;
 
   grid-template-columns:
-    repeat(auto-fill, minmax(240px, 1fr));
+    repeat(
+      auto-fill,
+      minmax(240px,1fr)
+    );
 }
 
+
 .work {
-  border: 1px solid var(--line);
 
-  border-radius: 18px;
+  border:1px solid var(--line);
 
-  padding: 19px;
+  border-radius:16px;
 
-  background: rgba(255,255,255,.72);
+  padding:16px 18px;
 
-  box-shadow: var(--shadow);
+  background:var(--surface);
+
+  box-shadow:
+    0 8px 25px rgba(150,100,140,.07);
 
   transition:
     transform .2s ease,
     box-shadow .2s ease;
 }
 
+
 .work:hover {
-  transform: translateY(-5px);
+  transform:translateY(-3px);
 
   box-shadow:
-    0 15px 30px rgba(180,130,170,.18);
+    0 12px 30px rgba(150,100,140,.12);
 }
+
 
 .work h3 {
-  margin: 0 0 7px;
+  margin:0 0 6px;
 
-  font-size: 17px;
-
-  color: #765f79;
+  font-size:17px;
 }
+
 
 .work p {
-  margin: 0;
+  margin:0;
 
-  color: var(--muted);
+  color:var(--muted);
 
-  font-size: 14px;
+  font-size:14.5px;
 }
+
 
 .work a {
-  color: #c4779d;
+  color:var(--accent-soft);
 
-  text-decoration: none;
+  text-decoration:none;
 
-  font-size: 14px;
+  font-size:14px;
 
-  display: inline-block;
+  display:inline-block;
 
-  margin-top: 10px;
+  margin-top:10px;
 }
+
 
 .work a:hover {
-  text-decoration: underline;
+  text-decoration:underline;
 }
+
 
 .empty {
-  border: 2px dashed #e9cddd;
 
-  border-radius: 18px;
+  border:1px dashed var(--line);
 
-  padding: 28px 20px;
+  border-radius:16px;
 
-  color: var(--muted);
+  padding:26px 20px;
 
-  background: rgba(255,255,255,.55);
+  color:var(--muted);
 
-  text-align: center;
+  text-align:center;
 
-  font-size: 15px;
+  font-size:15px;
+
+  background:
+    rgba(255,255,255,.45);
 }
 
-/* ---------- Network Panel ---------- */
+
+/* ==========================================================================
+   NETWORK PANEL
+   ========================================================================== */
 
 .panel {
-  border: 1px solid var(--line);
 
-  border-radius: 18px;
+  border:1px solid var(--line);
 
-  background: rgba(255,255,255,.65);
+  border-radius:16px;
 
-  padding: 5px 20px 18px;
+  background:var(--surface);
 
-  box-shadow: var(--shadow);
+  padding:4px 20px 16px;
+
+  box-shadow:
+    0 8px 25px rgba(150,100,140,.06);
 }
+
 
 .row {
-  display: grid;
+
+  display:grid;
 
   grid-template-columns:
-    minmax(130px, 1fr)
-    minmax(0, 1.5fr);
+    minmax(130px,1fr)
+    minmax(0,1.5fr);
 
-  gap: 12px;
+  gap:12px;
 
-  padding: 12px 0;
+  padding:11px 0;
 
-  border-bottom: 1px dashed #ead9e4;
+  border-bottom:1px dashed var(--line);
 
-  align-items: baseline;
+  align-items:baseline;
 }
+
 
 .row:last-of-type {
-  border-bottom: 0;
+  border-bottom:0;
 }
+
 
 .row dt {
-  color: var(--muted);
+  color:var(--muted);
 
-  font-size: 14px;
+  font-size:14px;
+
+  margin:0;
 }
+
 
 .row dd {
-  margin: 0;
+  margin:0;
 
-  font-family:
-    ui-monospace,
-    "SF Mono",
-    Menlo,
-    Consolas,
-    monospace;
+  font-family:var(--mono);
 
-  font-size: 13px;
+  font-size:14px;
 
-  color: #ad6f94;
+  color:var(--accent-soft);
 
-  word-break: break-all;
+  word-break:break-all;
 }
+
 
 .row .note {
-  display: block;
 
-  color: var(--muted);
+  display:block;
 
-  font-family: inherit;
+  color:var(--muted);
 
-  font-size: 12px;
+  font-family:inherit;
 
-  margin-top: 2px;
+  font-size:12.5px;
 }
+
 
 .hint {
-  color: var(--muted);
 
-  font-size: 13px;
+  color:var(--muted);
 
-  margin: 15px 0 0;
+  font-size:14px;
+
+  margin:14px 0 0;
 }
 
-/* ---------- Footer ---------- */
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
 
 footer {
-  margin-top: 60px;
 
-  padding-top: 25px;
+  margin-top:56px;
 
-  border-top: 2px dashed #efd8e5;
+  padding-top:22px;
 
-  color: var(--muted);
+  border-top:1px solid var(--line);
 
-  font-size: 13px;
+  color:var(--muted);
 
-  text-align: center;
+  font-size:14px;
+
+  text-align:center;
 }
+
 
 footer a {
-  color: #c4779d;
+  color:var(--accent-soft);
 }
 
-/* ---------- Mobile ---------- */
+
+/* ==========================================================================
+   MOBILE
+   ========================================================================== */
 
 @media (max-width:520px) {
 
-  .wrap {
-    padding-left: 17px;
-    padding-right: 17px;
-  }
-
   .hero {
-    padding-top: 35px;
 
-    justify-content: center;
+    padding-top:44px;
 
-    text-align: center;
-  }
-
-  .hero-text {
-    min-width: 100%;
+    gap:16px;
   }
 
   .avatar,
   .avatar-fallback {
-    width: 95px;
-    height: 95px;
-  }
 
-  .avatar-fallback {
-    font-size: 34px;
-  }
+    width:72px;
+    height:72px;
 
-  .about {
-    text-align: center;
-  }
-
-  .links {
-    justify-content: center;
+    font-size:28px;
   }
 
   .row {
-    grid-template-columns: 1fr;
 
-    gap: 2px;
+    grid-template-columns:1fr;
+
+    gap:2px;
   }
 
-  h1 {
-    font-size: 38px;
-  }
 }
+
 </style>
 </head>
+
 
 <body>
 
 <div class="wrap">
 
-  <!-- =====================================================
-       🌷 HEADER
-       ===================================================== -->
+
+  <!-- ========================================================================
+       HEADER
+       ======================================================================== -->
 
   <header class="hero">
 
@@ -615,61 +700,82 @@ footer a {
       class="avatar"
       id="avatar"
       alt=""
-      width="120"
-      height="120"
+      width="96"
+      height="96"
     >
 
     <div class="hero-text">
 
-      <p class="role" id="role"></p>
+      <p
+        class="role"
+        id="role">
+      </p>
 
-      <h1 id="name"></h1>
+      <h1
+        id="name">
+      </h1>
 
-      <p class="tagline" id="tagline"></p>
+      <p
+        class="tagline"
+        id="tagline">
+      </p>
 
     </div>
 
   </header>
 
 
-  <!-- =====================================================
-       💗 ABOUT
-       ===================================================== -->
+  <!-- ABOUT -->
 
-  <p class="about" id="about"></p>
+  <p
+    class="about"
+    id="about">
+  </p>
 
-  <ul class="links" id="links"></ul>
+
+  <!-- LINKS -->
+
+  <ul
+    class="links"
+    id="links">
+  </ul>
 
 
-  <!-- =====================================================
-       📚 LEARNING
-       ===================================================== -->
+  <!-- ========================================================================
+       LEARNING
+       ======================================================================== -->
 
   <section>
 
     <h2>กำลังเรียนรู้</h2>
 
-    <ul class="learning" id="learning"></ul>
+    <ul
+      class="learning"
+      id="learning">
+    </ul>
 
   </section>
 
 
-  <!-- =====================================================
-       💻 WORKS
-       ===================================================== -->
+  <!-- ========================================================================
+       WORKS
+       ======================================================================== -->
 
   <section>
 
     <h2>ผลงาน</h2>
 
-    <div class="works" id="works"></div>
+    <div
+      class="works"
+      id="works">
+    </div>
 
   </section>
 
 
-  <!-- =====================================================
-       🌐 NETWORK INFORMATION
-       ===================================================== -->
+  <!-- ========================================================================
+       NETWORK INFORMATION
+       ======================================================================== -->
 
   <section>
 
@@ -680,8 +786,8 @@ footer a {
       <dl id="netpanel"></dl>
 
       <p class="hint">
-        กด F12 → Network → Ctrl+F5
-        เพื่อดูข้อมูลการเชื่อมต่อจริง
+        กด F12 เลือกแท็บ Network แล้วกด Ctrl+F5
+        เพื่อเปรียบเทียบค่า
       </p>
 
     </div>
@@ -689,90 +795,47 @@ footer a {
   </section>
 
 
-  <!-- =====================================================
-       🌷 FOOTER
-       ===================================================== -->
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
 
   <footer>
 
-    Made with HTML, CSS & JavaScript 🌷
-    ·
-    <a id="repolink" href="#">
-      GitHub
+    สร้างด้วย HTML, CSS และ JavaScript ·
+    โฮสต์บน GitHub Pages ·
+
+    <a
+      id="repolink"
+      href="https://github.com">
+      ดูซอร์สโค้ดของหน้านี้
     </a>
 
   </footer>
+
 
 </div>
 
 
 <script>
 
-/* =========================================================
-   💗 ข้อมูลของ Kornchanok21
-   ========================================================= */
-
-const ME = {
-
-  /* GitHub username */
-  github: "Kornchanok21",
-
-  /* ชื่อ */
-  name: "กรชนก แสวงนอก",
-
-  /* สถานะ */
-  role: "นักศึกษาวิศวกรรมคอมพิวเตอร์ ปี 1 · มทร.อีสาน",
-
-  /* คำโปรย */
-  tagline:
-    "กำลังเรียนรู้การเขียนโปรแกรม ระบบเครือข่าย และเทคโนโลยี IoT เพื่อสร้างสิ่งที่ใช้งานได้จริง ♡",
-
-  /* แนะนำตัว */
-  about:
-    "สวัสดีค่ะ เราชื่อกรชนก เป็นนักศึกษาวิศวกรรมคอมพิวเตอร์ ปี 1 สนใจด้านการเขียนโปรแกรม ระบบเครือข่าย และเทคโนโลยี IoT กำลังค่อย ๆ เรียนรู้และพัฒนาทักษะของตัวเองผ่านการเรียนและการทำโปรเจกต์เล็ก ๆ",
-
-  /* สิ่งที่กำลังเรียน */
-  learning: [
-
-    "ภาษา C และพื้นฐานการเขียนโปรแกรม",
-
-    "HTML, CSS และ JavaScript",
-
-    "ระบบเครือข่ายและพื้นฐาน IoT",
-
-    "Git และ GitHub",
-
-    "Arduino และอุปกรณ์อิเล็กทรอนิกส์"
-
-  ],
-
-  /* ผลงาน */
-  works: [],
-
-  /* ช่องทางติดต่อ */
-  links: [
-
-    {
-      label: "♡ GitHub",
-      url: "https://github.com/Kornchanok21"
-    }
-
-  ]
-
-};
-
-
-/* =========================================================
-   ⚙️ แสดงข้อมูล
-   ========================================================= */
+/* ==========================================================================
+   1) นำข้อมูลจาก ME มาแสดง
+   ========================================================================== */
 
 const $ = (id) =>
   document.getElementById(id);
 
 
-document.title =
-  ME.name + " | Kornchanok21";
+document.title = ME.name;
 
+
+/* ตั้งธีม */
+
+document.documentElement.dataset.theme =
+  ME.theme || "princess";
+
+
+/* ข้อมูลโปรไฟล์ */
 
 $("role").textContent =
   ME.role;
@@ -787,12 +850,13 @@ $("about").textContent =
   ME.about;
 
 
-/* =========================================================
-   🌷 รูปโปรไฟล์ GitHub
-   ========================================================= */
+/* ==========================================================================
+   GitHub Profile Picture
+   ========================================================================== */
 
 const avatar =
   $("avatar");
+
 
 avatar.alt =
   "รูปโปรไฟล์ของ " + ME.name;
@@ -814,7 +878,7 @@ avatar.addEventListener(
     );
 
     box.textContent =
-      ME.name
+      (ME.name || "?")
         .trim()
         .charAt(0);
 
@@ -824,15 +888,17 @@ avatar.addEventListener(
 );
 
 
+/* ดึงรูปจาก GitHub */
+
 avatar.src =
   "https://github.com/"
   + ME.github
   + ".png?size=192";
 
 
-/* =========================================================
-   📚 Learning
-   ========================================================= */
+/* ==========================================================================
+   Learning
+   ========================================================================== */
 
 for (
   const item of ME.learning || []
@@ -850,9 +916,9 @@ for (
 }
 
 
-/* =========================================================
-   🔗 Links
-   ========================================================= */
+/* ==========================================================================
+   Links
+   ========================================================================== */
 
 for (
   const link of ME.links || []
@@ -867,9 +933,6 @@ for (
   a.textContent =
     link.label;
 
-  a.target =
-    "_blank";
-
   a.rel =
     "noopener noreferrer";
 
@@ -877,7 +940,9 @@ for (
   const li =
     document.createElement("li");
 
+
   li.appendChild(a);
+
 
   $("links")
     .appendChild(li);
@@ -885,9 +950,9 @@ for (
 }
 
 
-/* =========================================================
-   💻 Works
-   ========================================================= */
+/* ==========================================================================
+   Works
+   ========================================================================== */
 
 if (
   !ME.works ||
@@ -901,7 +966,7 @@ if (
     "empty";
 
   box.textContent =
-    "🌷 ยังไม่มีผลงานในหน้านี้ กำลังเรียนรู้อยู่ แล้วจะกลับมาเพิ่มเรื่อย ๆ ♡";
+    "ยังไม่มีผลงานในหน้านี้ กำลังเรียนรู้และสร้างผลงานใหม่ ๆ อยู่ ✦";
 
   $("works")
     .appendChild(box);
@@ -952,9 +1017,6 @@ else {
       a.textContent =
         "ดูผลงาน ↗";
 
-      a.target =
-        "_blank";
-
       a.rel =
         "noopener noreferrer";
 
@@ -971,9 +1033,9 @@ else {
 }
 
 
-/* =========================================================
-   🐙 GitHub Repository
-   ========================================================= */
+/* ==========================================================================
+   GitHub Repository Link
+   ========================================================================== */
 
 $("repolink").href =
   "https://github.com/"
@@ -983,9 +1045,9 @@ $("repolink").href =
   + ".github.io";
 
 
-/* =========================================================
-   🌐 Network Information
-   ========================================================= */
+/* ==========================================================================
+   Network Information
+   ========================================================================== */
 
 function ms(v) {
 
@@ -999,164 +1061,157 @@ function ms(v) {
 
   }
 
-  return (
-    Math.round(v)
-    + " ms"
-  );
+  return Math.round(v) + " ms";
 
 }
 
 
 window.addEventListener(
   "load",
-  () => {
+  () => setTimeout(
+    () => {
 
-    setTimeout(
-      () => {
-
-        const nav =
-          performance.getEntriesByType(
-            "navigation"
-          )[0];
+      const nav =
+        performance.getEntriesByType(
+          "navigation"
+        )[0];
 
 
-        const rows = [
+      const rows = [
+
+        [
+          "Domain name",
+
+          location.hostname ||
+          "(เปิดจากไฟล์ในเครื่อง)",
+
+          "ชื่อโดเมนต้องถูกแปลงเป็น IP address ผ่าน DNS ก่อน จึงจะติดต่อ server ได้"
+        ],
+
+        [
+          "Protocol",
+
+          location.protocol,
+
+          "https คือ HTTP ที่เพิ่มการเข้ารหัสและการยืนยันตัวตน server ด้วย certificate"
+        ]
+
+      ];
+
+
+      if (nav)
+
+        rows.push(
 
           [
-            "Domain name",
 
-            location.hostname ||
-            "(เปิดจากไฟล์ในเครื่อง)",
+            "HTTP version",
 
-            "ชื่อโดเมนของเว็บไซต์"
+            nav.nextHopProtocol ||
+            "—",
+
+            "h2 คือ HTTP/2 และ h3 คือ HTTP/3 ซึ่งส่งหลายไฟล์พร้อมกันได้ในการเชื่อมต่อเดียว"
+
           ],
 
           [
-            "Protocol",
 
-            location.protocol,
+            "DNS lookup",
 
-            "https คือ HTTP ที่มีการเข้ารหัสข้อมูล"
+            ms(
+              nav.domainLookupEnd -
+              nav.domainLookupStart
+            ),
+
+            "เวลาที่ใช้แปลงชื่อโดเมนเป็น IP address ถ้าได้ 0 ms แปลว่ามีคำตอบอยู่ใน cache แล้ว"
+
+          ],
+
+          [
+
+            "Connection + TLS",
+
+            ms(
+              nav.connectEnd -
+              nav.connectStart
+            ),
+
+            "เวลาสร้างการเชื่อมต่อ รวมขั้นตอน TLS handshake ก่อนเริ่มรับส่งข้อมูลจริง"
+
+          ],
+
+          [
+
+            "TTFB",
+
+            ms(
+              nav.responseStart -
+              nav.requestStart
+            ),
+
+            "Time To First Byte เวลาตั้งแต่ส่ง request จนได้ข้อมูลไบต์แรกกลับมา ยิ่ง server ไกลยิ่งสูง"
+
           ]
 
-        ];
+        );
 
 
-        if (nav) {
+      for (
+        const [label, value, note]
+        of rows
+      ) {
 
-          rows.push(
+        const row =
+          document.createElement("div");
 
-            [
-              "HTTP version",
-
-              nav.nextHopProtocol ||
-              "—",
-
-              "h2 คือ HTTP/2 และ h3 คือ HTTP/3"
-            ],
-
-            [
-              "DNS lookup",
-
-              ms(
-                nav.domainLookupEnd -
-                nav.domainLookupStart
-              ),
-
-              "เวลาที่ใช้ค้นหา IP address ของโดเมน"
-            ],
-
-            [
-              "Connection + TLS",
-
-              ms(
-                nav.connectEnd -
-                nav.connectStart
-              ),
-
-              "เวลาสร้างการเชื่อมต่อกับ server"
-            ],
-
-            [
-              "TTFB",
-
-              ms(
-                nav.responseStart -
-                nav.requestStart
-              ),
-
-              "Time To First Byte"
-            ]
-
-          );
-
-        }
+        row.className =
+          "row";
 
 
-        for (
-          const [label, value, note]
-          of rows
-        ) {
+        const dt =
+          document.createElement("dt");
 
-          const row =
-            document.createElement(
-              "div"
-            );
-
-          row.className =
-            "row";
+        dt.textContent =
+          label;
 
 
-          const dt =
-            document.createElement(
-              "dt"
-            );
+        const dd =
+          document.createElement("dd");
 
-          dt.textContent =
-            label;
+        dd.textContent =
+          value;
 
 
-          const dd =
-            document.createElement(
-              "dd"
-            );
+        const small =
+          document.createElement("span");
 
-          dd.textContent =
-            value;
+        small.className =
+          "note";
 
-
-          const small =
-            document.createElement(
-              "span"
-            );
-
-          small.className =
-            "note";
-
-          small.textContent =
-            note;
+        small.textContent =
+          note;
 
 
-          dd.appendChild(
-            small
-          );
-
-          row.append(
-            dt,
-            dd
-          );
+        dd.appendChild(
+          small
+        );
 
 
-          $("netpanel")
-            .appendChild(row);
+        row.append(
+          dt,
+          dd
+        );
 
-        }
 
-      },
-      0
-    );
+        $("netpanel")
+          .appendChild(row);
 
-  }
+      }
+
+    },
+
+    0
+  )
 );
 
 </script>
